@@ -1,3 +1,4 @@
+import CardComponent from "../Component/Home/CardComponent"
 import HeroComponent from "../Component/Home/HeroComponent"
 import MainNav from "../MainNavComponent"
 import TopNav from "../TopNavComponent"
@@ -9,6 +10,7 @@ const Home = () => {
       <TopNav />
       <MainNav />
       <HeroComponent />
+      <CardComponent />
     </div>
   )
 }
