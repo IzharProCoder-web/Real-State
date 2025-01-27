@@ -52,7 +52,7 @@ const MainNav = () => {
           className="md:hidden"
           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
         >
-          <CiMenuFries size={24} />
+          <CiMenuFries size={24} className="cursor-pointer" />
         </div>
       </div>
 

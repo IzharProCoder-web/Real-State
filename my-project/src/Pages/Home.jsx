@@ -1,3 +1,4 @@
+import FeaturedComponent from "../Component/Home/FeaturedComponent"
 import CardComponent from "../Component/Home/CardComponent"
 import HeroComponent from "../Component/Home/HeroComponent"
 import MainNav from "../MainNavComponent"
@@ -11,6 +12,7 @@ const Home = () => {
       <MainNav />
       <HeroComponent />
       <CardComponent />
+      <FeaturedComponent />
     </div>
   )
 }
