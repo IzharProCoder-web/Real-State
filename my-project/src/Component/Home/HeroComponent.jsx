@@ -19,7 +19,7 @@ const HeroComponent = () => {
   const navigate = useNavigate()
 
   return (
-    <section className="bg-[#1A1A1A] text-white w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-8 py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+    <section className="bg-[#1A1A1A] text-white w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-8 py-12 pb-40 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative">
       <div className="flex flex-col justify-center w-full lg:w-1/2 space-y-8">
         <div className="space-y-4">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight">
@@ -33,7 +33,7 @@ const HeroComponent = () => {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <button
-            onClick={() => navigate("/aboutus")}
+            onClick={() => navigate("/about")}
             className="rounded-lg border border-[#262626] text-sm sm:text-base md:text-lg px-4 py-2 sm:px-6 sm:py-3 hover:bg-[#262626] transition-all duration-300 w-full sm:w-auto"
           >
             Learn More
@@ -61,6 +61,12 @@ const HeroComponent = () => {
 
       <div className="flex items-center justify-center w-full lg:w-1/2 mb-8 lg:mb-0">
         <img src="/img/Container.svg" alt="hero" className="w-full h-auto object-contain max-w-md lg:max-w-full" />
+      </div>
+
+
+      <div className=" w-[175px] h-[175px] lg:top-[50px] lg:right-[40%] top-[90%] left-0 rounded-full absolute hidden">
+      <img src="/img/Sub Container.svg" />
+        
       </div>
     </section>
   )

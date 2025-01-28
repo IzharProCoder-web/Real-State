@@ -1,13 +1,18 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home";
+import AppRoutes from "./AppRoutes";
+// import Home from "./Pages/Home";
+
+
 
 function App() {
-  return (
-    <div>
-      <Home />
-      
-    </div>
 
+    
+  return (
+    <BrowserRouter >
+      <AppRoutes />
+    </BrowserRouter>
+    
   );
 }
 

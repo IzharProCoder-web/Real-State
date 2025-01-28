@@ -1,8 +1,12 @@
+import AboutUsHeroComp from "../Component/AboutUs/AboutUsHeroComp";
+import MainNav from "../MainNavComponent"
+import TopNav from "../TopNavComponent"
 const AboutUs = () => {
   return (
     <div>
-    
-      <h1 className="mt-20 bg-red-200 h-[200px]">AboutUs page</h1>
+    <TopNav/>
+    <MainNav/>
+    <AboutUsHeroComp />
 
     </div>
   );

@@ -1,4 +1,5 @@
 import { FiArrowUpRight } from "react-icons/fi"
+import { Link } from "react-router-dom"
 
 const CardComponent = () => {
   const CardsData = [
@@ -30,7 +31,7 @@ const CardComponent = () => {
               className="relative flex flex-col items-center justify-center bg-[#252525] rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105"
             >
               <div className="absolute top-4 right-4 ">
-                <FiArrowUpRight className="w-5 h-5 text-white transform rotate-45" />
+                <Link to="/properties" ><FiArrowUpRight className="w-5 h-5 text-white transform rotate-45" /></Link>
               </div>
               <img
                 src={data.img || "/placeholder.svg"}

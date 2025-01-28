@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
@@ -11,11 +11,12 @@ const MainNav = () => {
 <>
       <nav className="bg-[#262626] lg:text-[18px] w-full xl:h-[99px] lg:h-[70px] h-[50px] flex justify-between items-center text-white px-7 relative">
       <div className="md:w-[120px]  ">
-        <img
+        <Link to="/">
+         <img
           src="/img/Logo.svg"
           alt="logo img"
           className="md-w-full xl:w-[200px] w-[80px]"
-        />
+        /></Link>
       </div>
 
       <div>
