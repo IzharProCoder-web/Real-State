@@ -4,6 +4,9 @@ import HeroComponent from "../Component/Home/HeroComponent"
 import MainNav from "../MainNavComponent"
 import TopNav from "../TopNavComponent"
 import ClientComponent from "../Component/Home/ClientComponent"
+import QuestionComponent from "../Component/Home/QuestionComponent"
+import FindProperties from "../FindProperties"
+import Footer from "../FooterComponent"
 
 const Home = () => {
   return (
@@ -15,7 +18,9 @@ const Home = () => {
       <CardComponent />
       <FeaturedComponent />
       <ClientComponent />
-     
+    <QuestionComponent />    
+    <FindProperties />  
+    <Footer />
     </div>
   )
 }
