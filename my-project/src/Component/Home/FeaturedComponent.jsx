@@ -1,5 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { FaBed, FaBath, FaHome } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const FeaturedComponent = () => {
   const featuredData = [
@@ -45,9 +46,11 @@ const FeaturedComponent = () => {
             </p>
           </div>
           <div className="md:ml-auto">
-            <button className="w-full md:w-auto bg-[#262626] text-white font-medium py-2 px-6 rounded-md transition duration-300 hover:bg-[#333]">
+          <Link to="/properties">
+          <button className="w-full md:w-auto bg-[#262626] text-white font-medium py-2 px-6 rounded-md transition duration-300 hover:bg-[#333]">
               View All Properties
             </button>
+          </Link>
           </div>
         </div>
 
@@ -58,17 +61,20 @@ const FeaturedComponent = () => {
               className="w-full overflow-hidden rounded-2xl bg-zinc-900 text-white border-2 border-[#262626]"
             >
               <div className="relative w-full pb-[66.67%] overflow-hidden rounded-t-2xl">
+                <Link to="/propertyDetail">
                 <img
                   src={property.img || "/placeholder.svg"}
                   alt={property.title}
+                  
                   className="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+                /> 
+                </Link>
               </div>
               <div className="p-4 sm:p-6 space-y-4">
                 <h2 className="text-xl font-bold">{property.title}</h2>
                 <p className="text-sm text-zinc-400">
                   {property.description}{" "}
-                  <span className="text-purple-400 hover:underline cursor-pointer">Read More</span>
+                  <Link to="/propertyDetail" className="text-white hover:underline cursor-pointer">Read More</Link>
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm text-white">
                   <div className="flex items-center gap-1">
@@ -87,9 +93,11 @@ const FeaturedComponent = () => {
               </div>
               <div className="p-4 sm:p-6 pt-0 flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
                 <div className="text-2xl font-bold">{property.price}</div>
+                <Link to="/propertyDetail">
                 <button className="w-full sm:w-auto px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors duration-200">
                   View Property Details
                 </button>
+                </Link>
               </div>
             </div>
           ))}

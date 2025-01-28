@@ -18,7 +18,7 @@ const TopNav = () => {
       <div className="container mx-auto px-4 flex justify-center items-center">
         <h3 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl flex flex-wrap justify-center items-center">
           <p className="text-center">✨Discover Your Dream Property with Estatein</p>
-          <Link to="/about" className="ml-1 sm:ml-2 underline cursor-pointer whitespace-nowrap">
+          <Link to="/properties" className="ml-1 sm:ml-2 underline cursor-pointer whitespace-nowrap">
             Learn More
           </Link>
         </h3>

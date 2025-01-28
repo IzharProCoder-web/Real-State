@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+import { Link } from "react-router-dom"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 
 const ClientComponent = () => {
@@ -42,14 +42,14 @@ const ClientComponent = () => {
             </p>
           </div>
           <div className="md:ml-auto">
-            <button className="w-full md:w-auto bg-[#262626] text-white font-medium py-2 px-6 rounded-md transition duration-300 hover:bg-[#333]">
+            <Link to="/about"><button className="w-full md:w-auto bg-[#262626] text-white font-medium py-2 px-6 rounded-md transition duration-300 hover:bg-[#333]">
               View All Testimonials
-            </button>
+            </button></Link>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {clientData.map((data, index) => (
+          {clientData.map((data) => (
             <div
               key={data.clientName}
               className="border-2 border-[#262626] rounded-lg p-6 shadow-md flex flex-col h-full"

@@ -17,8 +17,9 @@ export default function Footer() {
                 type="email"
                 placeholder="Enter Your Email"
                 className="bg-transparent border-none outline-none flex-1 text-sm"
+                required
               />
-              <button className="text-purple-500 hover:text-purple-400">
+              <button className="text-white hover:text-purple-400">
                 <FiSend size={20} />
               </button>
             </div>

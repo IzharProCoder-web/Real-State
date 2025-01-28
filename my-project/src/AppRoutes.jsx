@@ -4,6 +4,7 @@ import AboutUs from "./Pages/AboutUs";
 import Properties from "./Pages/Properties";
 import Service from "./Pages/Services";
 import Contact from "./Pages/ContactUs";
+import PropertieDetail from "./Pages/PropertieDetail";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       <Route path="/properties" element={<Properties />} />
       <Route path="/services" element={<Service />} /> {/* Corrected path */}
       <Route path="/contact" element={<Contact />} />
+      <Route path="/propertyDetail" element={<PropertieDetail />} />
     </Routes>
   );
 };

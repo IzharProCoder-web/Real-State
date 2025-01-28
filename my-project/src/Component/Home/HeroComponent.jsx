@@ -19,7 +19,7 @@ const HeroComponent = () => {
   const navigate = useNavigate()
 
   return (
-    <section className="bg-[#1A1A1A] text-white w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-8 py-12 pb-40 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative">
+    <section className="bg-[#1A1A1A] text-white w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-8 py-12  px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative">
       <div className="flex flex-col justify-center w-full lg:w-1/2 space-y-8">
         <div className="space-y-4">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight">
