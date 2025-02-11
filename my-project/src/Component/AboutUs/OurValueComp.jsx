@@ -33,7 +33,7 @@ const OurValueComp = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-2 mt-4 md:mt-0 border-[5px] border-[#262626] w-[1000px]">
+      <div className="grid md:grid-cols-2 md:gap-4 lg:grid-cols-2 mt-6 md:mt-0 border-[5px] border-[#262626] md:w-[1000px]">
         {ourValueData.map((data, index) => (
           <div key={index} className="flex flex-col    rounded-lg shadow-sm p-4 text-white">
            <div className="flex items-center gap-x-2">

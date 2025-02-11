@@ -1,9 +1,21 @@
+import MainNav from "../MainNavComponent"
+import TopNav from "../TopNavComponent"
+// import FindProperties from "../FindProperties"
+// import Footer from "../FooterComponent"
+
 const Properties = () => {
   return (
-    <div className="bg-red-400 p-5 w-full mt-52">
+    <div>
+    <TopNav />
+    <MainNav />
+
+    {/* <FindProperties/>
+    <Footer /> */}
+
     
-      <h1>Properties Page</h1>
+    
     </div>
+    
   );
 };
 
