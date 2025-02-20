@@ -22,7 +22,7 @@ const CardComponent = () => {
   ]
 
   return (
-    <section className="w-full bg-[#1A1A1A] text-white py-8 sm:py-12 md:py-16">
+    <section className="w-full bg-[#141414] text-white py-5 border-y-[15px] border-[#1A1A1A]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {CardsData.map((data, index) => (

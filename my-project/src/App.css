@@ -8,5 +8,11 @@ body {
 }
 
  a.active {
+    
     color: red;
+}
+
+input {
+    outline: none;
+    border-radius: 10px;
 }
