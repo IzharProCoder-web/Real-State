@@ -20,7 +20,7 @@ const MainNav = () => {
       </div>
 
       <div>
-        <ul className="hidden md:flex gap-x-4">
+        <ul className="hidden md:flex gap-x-4 ">
               <NavLink to="/">Home</NavLink>
 
             <NavLink to="/about">About Us</NavLink>
@@ -28,7 +28,7 @@ const MainNav = () => {
             <NavLink to="/service">Services</NavLink>
         </ul>
         {isMobileMenuOpen && (
-          <ul className="py-4  absolute top-0 right-0 bg-[#1A1A1A] w-[50%] flex flex-col items-center gap-y-4 md:hidden">
+          <ul className="py-4  absolute top-0 right-0 bg-[#1A1A1A] w-[50%] flex flex-col z-20 items-center gap-y-4 md:hidden">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

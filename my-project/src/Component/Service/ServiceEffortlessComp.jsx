@@ -1,37 +1,37 @@
-const ServiceUnlockProperties = () => {
-  const unlockPropertieData = [
-    {
-      img: "/img/Icon-service-1.svg",
-      title: "Valuation Mastery",
-      description: "Discover the true worth of your property with our expert valuation services.",
-      isLongDiv: false,
-    },
-    {
-      img: "/img/Icon-service-2.svg",
-      title: "Strategic Marketing",
-      description: "Selling a property requires more than just a listing; it demands a strategic marketing approach.",
-      isLongDiv: false,
-    },
-    {
-      img: "/img/Icon-service-3.svg",
-      title: "Negotiation Wizardry",
-      description: "Negotiating the best deal is an art, and our negotiation experts are masters of it.",
-      isLongDiv: false,
-    },
-    {
-      img: "/img/Icon-service-4.svg",
-      title: "Closing Success",
-      description: "A successful sale is not complete until the closing. We guide you through the intricate closing process.",
-      isLongDiv: false,
-    },
-    {
-      title: "Unlock the Value of Your Property Today",
-      description: "Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.",
-      btn: "Learn More",
-      isLongDiv: true,
-    },
-  ];
 
+const ServiceEffortlessComp = () => {
+    const unlockPropertieData = [
+        {
+          img: "/img/Icon-service-1.svg",
+          title: "Valuation Mastery",
+          description: "Discover the true worth of your property with our expert valuation services.",
+          isLongDiv: false,
+        },
+        {
+          img: "/img/Icon-service-2.svg",
+          title: "Strategic Marketing",
+          description: "Selling a property requires more than just a listing; it demands a strategic marketing approach.",
+          isLongDiv: false,
+        },
+        {
+          img: "/img/Icon-service-3.svg",
+          title: "Negotiation Wizardry",
+          description: "Negotiating the best deal is an art, and our negotiation experts are masters of it.",
+          isLongDiv: false,
+        },
+        {
+          img: "/img/Icon-service-4.svg",
+          title: "Closing Success",
+          description: "A successful sale is not complete until the closing. We guide you through the intricate closing process.",
+          isLongDiv: false,
+        },
+        {
+          title: "Unlock the Value of Your Property Today",
+          description: "Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.",
+          btn: "Learn More",
+          isLongDiv: true,
+        },
+      ];
   return (
     <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-14  text-white">
       <div className="max-w-7xl mx-auto">
@@ -95,7 +95,7 @@ const ServiceUnlockProperties = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ServiceUnlockProperties;
+export default ServiceEffortlessComp

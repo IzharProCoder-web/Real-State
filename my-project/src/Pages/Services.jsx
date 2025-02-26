@@ -3,7 +3,10 @@ import TopNav from "../TopNavComponent"
 import ServiceHeroComp from "../Component/Service/ServiceHeroComp"
 import CardComponent from "../Component/Home/CardComponent"
 import ServiceInvestmentComp from "../Component/Service/ServiceInvestmentComp"
-// import ServiceUnlockPropertie from "../Component/Service/ServiceUnlockPropertie"
+import ServiceUnlockPropertie from "../Component/Service/ServiceUnlockPropertie"
+import ServiceEffortlessComp from "../Component/Service/ServiceEffortlessComp"
+import FindProperties from "../FindProperties"
+import Footer from "../FooterComponent"
 
 
 const services = () => {
@@ -13,9 +16,11 @@ const services = () => {
     <MainNav/>
     <ServiceHeroComp />
     <CardComponent />
-    {/* <ServiceUnlockPropertie /> */}
+    <ServiceUnlockPropertie />
+    <ServiceEffortlessComp />
     <ServiceInvestmentComp />
-    
+    <FindProperties />
+    <Footer />
     </div>
   )
 }
