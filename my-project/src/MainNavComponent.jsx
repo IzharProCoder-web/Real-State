@@ -9,7 +9,7 @@ const MainNav = () => {
 
   return (
 <>
-      <nav className="bg-[#262626] lg:text-[18px] w-full xl:h-[99px] lg:h-[70px] h-[50px] flex justify-between items-center text-white px-7 relative">
+      <nav className="bg-[#262626] lg:text-[18px] w-full xl:h-[99px] lg:h-[70px] h-[50px] flex gap-9  justify-between items-center text-white px-7 relative">
       <div className="md:w-[120px]  ">
         <Link to="/">
          <img
@@ -48,7 +48,7 @@ const MainNav = () => {
       </div>
 
       <div>
-        <NavLink className="hidden md:block cursor-pointer" to="/contact">Contact Us</NavLink>
+        <NavLink className="hidden md:block cursor-pointer bg-[#703BF7] px-[24px] py-[16px] rounded-[10px] " to="/contact">Contact Us</NavLink>
         <div
           className="md:hidden"
           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}

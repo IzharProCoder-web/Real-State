@@ -8,8 +8,10 @@ body {
 }
 
  a.active {
-    
-    color: red;
+    background-color: #141414;
+    padding: 10px 24px ;
+    border-radius: 10px;
+
 }
 
 input {
