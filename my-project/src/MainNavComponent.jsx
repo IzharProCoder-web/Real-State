@@ -9,7 +9,7 @@ const MainNav = () => {
 
   return (
 <>
-      <nav className="bg-[#262626] lg:text-[18px] w-full xl:h-[99px] lg:h-[70px] h-[50px] flex gap-9  justify-between items-center text-white px-7 relative">
+      <nav className="bg-[#262626] lg:text-[18px] w-full xl:h-[99px] lg:h-[70px] h-[50px] flex  justify-between items-center text-white px-7 relative">
       <div className="md:w-[120px]  ">
         <Link to="/">
          <img
@@ -20,7 +20,7 @@ const MainNav = () => {
       </div>
 
       <div>
-        <ul className="hidden md:flex gap-x-4 ">
+        <ul className="hidden md:flex gap-x-4 items-center ">
               <NavLink to="/">Home</NavLink>
 
             <NavLink to="/about">About Us</NavLink>
