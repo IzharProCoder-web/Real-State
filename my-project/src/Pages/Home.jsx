@@ -11,7 +11,7 @@ import Footer from "../FooterComponent"
 const Home = () => {
   return (
     
-    <div className="max-w-[1530px] mx-auto">
+    <div className="">
       <TopNav />
       <MainNav />
       <HeroComponent />

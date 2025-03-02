@@ -8,7 +8,7 @@ import Footer from "../FooterComponent"
 
 const Properties = () => {
   return (
-    <div className="max-w-[1530px] mx-auto bg-[#141414] text-white">
+    <div className="bg-[#141414] text-white">
     <TopNav />
     <MainNav />
     <PropertiesHeroComp />

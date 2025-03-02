@@ -10,7 +10,7 @@ import Footer from "../FooterComponent"
 
 const ContactUs = () => {
   return (
-    <div className="max-w-[1530px] mx-auto text-white bg-[#141414]">
+    <div className=" text-white bg-[#141414]">
   <TopNav/>
   <MainNav />
   <ContactUsHeroComp />

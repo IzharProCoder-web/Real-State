@@ -10,7 +10,7 @@ import FindProperties from "../FindProperties"
 import Footer from "../FooterComponent"
 const AboutUs = () => {
   return (
-    <div className="max-w-[1530px] mx-auto bg-[#1A1A1A] text-white ">
+    <div className=" bg-[#1A1A1A] text-white ">
     <TopNav/>
     <MainNav/>
     <AboutUsHeroComp />
