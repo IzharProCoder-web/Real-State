@@ -1,28 +1,40 @@
-import FeaturedComponent from "../Component/Home/FeaturedComponent"
-import CardComponent from "../Component/Home/CardComponent"
-import HeroComponent from "../Component/Home/HeroComponent"
-import MainNav from "../MainNavComponent"
-import TopNav from "../TopNavComponent"
-import ClientComponent from "../Component/Home/ClientComponent"
-import QuestionComponent from "../Component/Home/QuestionComponent"
-import FindProperties from "../FindProperties"
-import Footer from "../FooterComponent"
+import React, { Suspense } from "react";
+import MainNav from "../MainNavComponent";
+import TopNav from "../TopNavComponent";
+import Footer from "../FooterComponent";
+import { TailSpin } from "react-loader-spinner";
+
+const HeroComponent = React.lazy(() => import("../Component/Home/HeroComponent"));
+const CardComponent = React.lazy(() => import("../Component/Home/CardComponent"));
+const FeaturedComponent = React.lazy(() => import("../Component/Home/FeaturedComponent"));
+const ClientComponent = React.lazy(() => import("../Component/Home/ClientComponent"));
+const QuestionComponent = React.lazy(() => import("../Component/Home/QuestionComponent"));
+const FindProperties = React.lazy(() => import("../FindProperties"));
+
+const Loader = () => (
+  <div className="flex justify-center items-center h-screen">
+    <TailSpin color="#703BF7" height={50} width={50} />
+  </div>
+);
 
 const Home = () => {
   return (
-    
     <div className="">
       <TopNav />
       <MainNav />
-      <HeroComponent />
-      <CardComponent />
-      <FeaturedComponent />
-      <ClientComponent />
-    <QuestionComponent />    
-    <FindProperties />  
-    <Footer />
+      
+      <Suspense fallback={<Loader />}>
+        <HeroComponent />
+        <CardComponent />
+        <FeaturedComponent />
+        <ClientComponent />
+        <QuestionComponent />    
+        <FindProperties />  
+      </Suspense>
+      
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
